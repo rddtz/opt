@@ -60,14 +60,18 @@ void remove_args(int *argc, char *argv[]);
 OPTION opt variable to get the place where its options are, but this function doesn't have
 any error handling method, so isn't recommended to be used alone, even if u can.*/
 void get_argv(char *argv[], int p);
+//-------------------------------
 
 /*argcpy:
- Copy the value from the pº argument of the actual option in opt to value string passed as
+ Copy the value from the argument number p of the actual option in opt to value string passed as
 argument. As said, the p is the argument u wanna get, so if u want the first argument, u must
 set the p as 0. If the p is greater than the arguments designed to the options, it will
 return a -2 error, u can see the error with the optError string.
 */
 short argcpy(char value[], int p, char *argv[], int argc);
+//--------------------------------
+
+
 
 /*-------------------------------
 //USE RECOMENDATION AND TIPS:
